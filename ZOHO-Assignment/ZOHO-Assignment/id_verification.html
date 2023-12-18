@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/b368c68ac4.js" crossorigin="anonymous"></script>
+    <style>
+        progress::-webkit-progress-bar {
+      background-color: #ffffff; /* Default color for browsers using WebKit */
+    }
+
+    /* Style the progress bar value */
+    progress::-webkit-progress-value {
+      background-color: #D2691E; /* Brown color for browsers using WebKit */
+    }
+
+    /* Style the progress bar track for Firefox */
+    progress::-moz-progress-bar {
+      background-color: #D2691E; /* Brown color for Firefox */
+    }
+        body {
+        margin: 0;
+        padding: 0;
+        }
+                #nav{
+            background: rgb(2,1,27);
+            background: linear-gradient(90deg, rgba(2,1,27,1) 0%, rgba(1,1,34,1) 35%, rgba(4,0,31,1) 100%);
+            height: 150px;
+        }
+        .file-upload-box {
+      border: 2px dashed #aaa;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      margin: 20px;
+    }
+    .file-upload-box:hover {
+      border-color: #333;
+    }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC</title>
+</head>
+<body style="background-color: #e9e7e7;">
+    <nav id="nav">
+        <div class="row">
+            <div class="col" style="margin-left: 2%;">
+              <img src="Images/dollar.png" height="25px" style="float: left; margin-top: 23px; margin-left: 1%; margin-right: 10px;"><h4 style="color:beige; font-family: 'Courier New', Courier, monospace; padding-top: 23px;">Money Protects</h4>
+            </div>
+
+            <div class="col" style="margin-right: -10%; margin-left: 0%;">
+                <a href="" style="text-decoration: none;"><i class="fa-solid fa-bars" style="color: white; font-size: 15px; margin-top: 29px; float: left;"></i><h6 style="color: white; margin-top: 26px; margin-left: 30px;">Dashboard</h6></a>
+            </div>
+
+            <div class="col" style="margin-left: -3%;">
+                <a href="" style="text-decoration: none;"><i class="fa-solid fa-book" style="color: white; font-size: 15px; margin-top: 29px; float: left;"></i><h6 style="color: white; margin-top: 26px; margin-left: 30px;">My Applications</h6></a>
+            </div>
+
+            <div class="col" style="margin-left: -11%;">
+                <button type="button" class="btn btn-warning" style="margin-top: 22px; border-radius: 25px;"><i class="fa-solid fa-plus" style="margin-right: 10px;"></i>New Application</button>
+            </div>
+            
+            <div class="col" style="margin-right: -20%;">
+               <a href="" ><i class="fa-solid fa-user" style="color: white; font-size: 18px; margin-top: 23px; float: left;"></i></a>
+            </div>
+            
+            <div class="col" style="margin-right: -12%;">
+                <a href=""><i class="fa-solid fa-message" style="color: white; font-size: 18px; margin-top: 23px; float: left;"></i></a>
+            </div>
+
+            <div class="col" style="margin-left: -8%; margin-right: -18%;">
+                <a href=""><i class="fa-solid fa-gear" style="color: white; font-size: 18px; margin-top: 23px; float: left;"></i></a>
+            </div>
+
+        </div>
+        <div class="row" style="margin-left: 48px; margin-top: 2%;">
+            <h4 style="color: white;">New Application</h4>
+        </div>
+
+        <progress value="25" max="100" style="width: 100%; margin-top: 1%; color: white; appearance: none; background-color: brown;" ></progress>
+
+    </nav>
+
+    <div class="container-fluid" style="height: 100px; background-color: #ffffff; ">
+        <div class="row">
+        <div class="col" style="margin-left: 12%;">
+            <i class="fa-regular fa-id-card" style="color: #D2691E; margin-top: 6%; font-size: 38px; float: left; border-radius: 10px;"></i>
+            <p style="padding-top: 24px; font-size: 10px; color: rgb(141, 144, 144); margin-left: 55px;">Step 1</p>
+            <p style="margin-top: -20px; margin-left: 55px;">ID Verification</p>
+            
+        </div>
+        
+        <div class="col">
+            <i class="fa-solid fa-circle-dollar-to-slot" style="color: #004395; margin-top: 6%; font-size: 38px; float: left; border-radius: 10px;"></i>
+            <p style="padding-top: 24px; font-size: 10px; color: rgb(141, 144, 144); margin-left: 55px;">Step 2</p>
+            <p style="margin-top: -20px; margin-left: 55px;">Income</p>
+            
+        </div>
+
+        <div class="col">
+            <i class="fa-solid fa-circle-info" style="color: #004395; margin-top: 6%; font-size: 38px; float: left; border-radius: 10px;"></i>
+            <p style="padding-top: 24px; font-size: 10px; color: rgb(141, 144, 144); margin-left: 55px;">Step 3</p>
+            <p style="margin-top: -20px; margin-left: 55px;">Loan Details</p>
+            
+        </div>
+
+        <div class="col">
+            <i class="fa-solid fa-file" style="color: #004395; margin-top: 6%; font-size: 38px; float: left; border-radius: 10px;"></i>
+            <p style="padding-top: 24px; font-size: 10px; color: rgb(141, 144, 144); margin-left: 55px;">Step 4</p>
+            <p style="margin-top: -20px; margin-left: 55px;">Agreement</p>
+            
+        </div>
+
+        </div>
+        
+    </div>
+    
+    <!-- <div  style="height: 500px; background-color: rgb(242, 241, 241); width: 100%; padding-bottom: 30px;"> -->
+            <div style="height: 400px; width: 320px; background-color: rgb(255, 255, 255); margin-top: 20px; margin-left: 40px; border-radius: 13px; float: left;">
+                <h4 style="margin-left: 5%; padding-top: 15px;">Upload Emirates ID</h4>
+                <hr>
+              
+                <div id="drop-area" class="file-upload-box" style="height: 73%;">
+                    <p>Drag &amp; Drop files here<br>(or click to select files)</p>
+                    <input type="file" id="fileElem" multiple accept="image/*" style="display: none;">
+                  </div>
+
+            
+
+            </div>
+
+            <div style="height: 400px; width: 900px; background-color: rgb(253, 253, 253); margin-left: 30%; margin-top: 20px; border-radius: 13px;">
+              <h4 style="margin-left: 5%; padding-top: 15px;">Personal Information</h4>
+                <hr>
+              <div class="row">  
+              <div class="col">
+                <div class="form-group" style="margin-left: 8%;">
+                  <label for="exampleInputEmail1" style="color: #aaa; margin-left: 5%;">First Name*</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First name" style="margin-left: 5%; width: 80%;">
+                  
+                </div>
+
+                <div class="form-group" style="margin-top: 2%; margin-left: 8%;">
+                  <label for="exampleInputEmail1" style="color: #aaa; margin-left: 5%;">Residency Status*</label>
+                  <select class="form-control" style="width: 80%; margin-left: 5%;">
+                    <option>Select</option>
+                    <option>YES</option>
+                    <option>No</option>
+                  </select>
+                  
+                </div>
+
+                <div class="form-group" style="margin-top: 2%; margin-left: 8%; ">
+                  <label for="exampleInputEmail1" style="color: #aaa; margin-left: 5%;">Nationality*</label>
+                  <select class="form-control" style="width: 80%; margin-left: 5%;">
+                    <option>Select</option>
+                    <option>Indian</option>
+                    <option>America</option>
+
+                  </select>
+                  
+                </div>
+                
+                <div class="form-group" style="margin-top: 2%; margin-left: 8%;">
+                  <label for="exampleInputEmail1" style="color: #aaa; margin-left: 5%;">Date of Birth*</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="dd/mm/yyyy" style="width: 80%; margin-left: 5%;">
+                  
+                </div>
+
+                
+              </div>
+              <div class="col">
+                <div class="form-group" style="margin-left: 8%;">
+                  <label for="exampleInputEmail1" style="color: #aaa;">Last Name*</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Last name"  style="width: 80%;">
+                  
+                </div>
+
+                <div class="form-group" style="margin-top: 2%; margin-left: 8%;">
+                  <label for="exampleInputEmail1" style="color: #aaa;">Emirates Id Number*</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Id" style="width: 80%;">
+                  
+                </div>
+
+                <div class="form-group" style="margin-top: 2%; margin-left: 8%;">
+                  <label for="exampleInputEmail1" style="color: #aaa;">Phone Number*</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="0000000000" style="width: 80%;">
+                  
+                </div>
+
+                <div class="form-group" style="margin-top: 2%; margin-left: 8%;">
+                  <label for="exampleInputEmail1" style="color: #aaa;">Email Address*</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com" style="width: 80%;">
+                  
+                </div>
+
+              </div>
+              </div>
+            </div>
+            
+            <div class="container-fluid" style="height: 80px; background-color: rgb(255, 255, 255); margin-top: 3%;">
+              <a href="" style="margin-left: 82%; margin-top: 2%; float: left; text-decoration: none; color: rgb(198, 129, 2);">Save as draft</a>
+              <button type="button" class="btn btn-warning" style="margin-left: 85%; margin-top: -2%; float: right; margin-right: 3%; color: white; background-color: #D2691E;">Continue</button>
+              
+            </div>
+            <script>
+              const dropArea = document.getElementById('drop-area');
+              const fileElem = document.getElementById('fileElem');
+          
+              ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, preventDefaults, false);
+              });
+          
+              function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+              }
+          
+              ['dragenter', 'dragover'].forEach(eventName => {
+                dropArea.addEventListener(eventName, highlight, false);
+              });
+          
+              ['dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, unhighlight, false);
+              });
+          
+              function highlight() {
+                dropArea.classList.add('highlight');
+              }
+          
+              function unhighlight() {
+                dropArea.classList.remove('highlight');
+              }
+          
+              dropArea.addEventListener('drop', handleDrop, false);
+          
+              function handleDrop(e) {
+                let dt = e.dataTransfer;
+                let files = dt.files;
+          
+                handleFiles(files);
+              }
+          
+              function handleFiles(files) {
+                [...files].forEach(uploadFile);
+              }
+          
+              function uploadFile(file) {
+                // Simulating file upload (replace this with actual file upload logic)
+                console.log('File uploaded:', file);
+                // You can perform file upload logic here, e.g., sending files to a server
+              }
+          
+              // Clicking the box triggers the file input
+              dropArea.addEventListener('click', () => {
+                fileElem.click();
+              });
+          
+              // Selecting files using traditional input
+              fileElem.addEventListener('change', (e) => {
+                handleFiles(e.target.files);
+              });
+                </script>
+    <!-- </div> -->
+    
+</body>
+</html>
